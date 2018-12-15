@@ -64,7 +64,8 @@ import logger from  './support/logger'
             const element =  await this.waitForDisplayed(locator);
             return await element.getText();
         } catch (err) {
-            await this.logger.error(`Unable to get text from elemet with locator ${locator} due to error: ${err.message}`)
+            await this.logger.error(`Unable to get text from elemet with locator ${locator} due to error: ${err.message}`);
+            throw new Error(`Unable to get text from elemet with locator ${locator} due to error: ${err.message}`)
         }
     }
 
