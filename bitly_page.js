@@ -11,9 +11,7 @@ const locators = {
  class BitlyPage extends BasePage {
 
 
-    /**
-     * @param url  -  url to be shortened
-     */
+    
     async typeUrlInToInPut(url) {
         await this.sendKeys(locators.URL_INPUT, url);
     }
