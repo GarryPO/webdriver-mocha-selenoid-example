@@ -1,0 +1,12 @@
+{
+  "chrome": {
+    "default": "70.0",
+    "versions": {
+      "70.0": {
+        "image": "selenoid/vnc:chrome_71.0",
+        "port": "4444",
+        "path": "/"
+      }
+    }
+  }
+}
