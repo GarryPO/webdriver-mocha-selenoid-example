@@ -10,10 +10,6 @@ import logger from  './support/logger'
         this.logger = logger;
     }
 
-    async getCurrentUrl() {
-        return  this.driver.getCurrentUrl();
-    }
-
     async waitForLocated(locator) {
         try {
             await this.driver.wait(until.elementsLocated(locator), 10000);
